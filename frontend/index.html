@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EcoTravel Advisor – Intelligent conversational platform for sustainable tourism planning. Plan eco-friendly trips, calculate carbon footprints, and discover green accommodation." />
+  <title>EcoTravel Advisor – Sustainable Journey Planner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── HEADER ─────────────────────────────────────────────────── -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="brand">
+        <!-- Custom Vector SVG Logo -->
+        <div class="logo-wrapper">
+          <svg class="brand-logo-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="22" cy="22" r="20" fill="url(#logo-grad-bg)" stroke="url(#logo-grad-border)" stroke-width="1.5"/>
+            <path d="M14 26C14 18 20 12 28 12C28 20 22 28 14 26Z" fill="url(#leaf-grad-1)"/>
+            <path d="M28 18C28 24 22 30 14 30C18 22 24 18 28 18Z" fill="url(#leaf-grad-2)" opacity="0.85"/>
+            <path d="M17 25C21 23 25 19 27 15" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="22" cy="22" r="19" stroke="#2E9E5E" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="3 3"/>
+            <defs>
+              <linearGradient id="logo-grad-bg" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#EBF6EE"/>
+                <stop offset="1" stop-color="#D5EBDC"/>
+              </linearGradient>
+              <linearGradient id="logo-grad-border" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#38B46B"/>
+                <stop offset="1" stop-color="#1E6B3E"/>
+              </linearGradient>
+              <linearGradient id="leaf-grad-1" x1="14" y1="12" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#2E9E5E"/>
+                <stop offset="1" stop-color="#1B5E36"/>
+              </linearGradient>
+              <linearGradient id="leaf-grad-2" x1="14" y1="18" x2="28" y2="30" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#52C47E"/>
+                <stop offset="1" stop-color="#28874E"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="logo-glow"></div>
+        </div>
+        <div class="brand-text">
+          <div class="brand-title-row">
+            <span class="brand-title">EcoTravel</span>
+            <span class="brand-subtitle">Advisor</span>
+            <span class="brand-badge">AI Platform</span>
+          </div>
+          <p class="brand-tagline">Sustainable Journeys · Smarter Choices</p>
+        </div>
+      </div>
+
+      <nav class="header-nav" aria-label="Primary navigation">
+        <button class="nav-btn" id="btn-plan-trip" aria-label="Plan a sustainable trip">
+          <span class="nav-icon">🗺️</span> Plan Trip
+        </button>
+        <button class="nav-btn" id="btn-carbon" aria-label="Calculate carbon footprint">
+          <span class="nav-icon">🌍</span> Carbon
+        </button>
+        <button class="nav-btn" id="btn-offsets" aria-label="Explore carbon offset options">
+          <span class="nav-icon">🌱</span> Offsets
+        </button>
+        <button class="nav-btn" id="btn-hotels" aria-label="Find eco accommodation">
+          <span class="nav-icon">🏨</span> Hotels
+        </button>
+        <button class="nav-btn" id="btn-flights" aria-label="Search flight options">
+          <span class="nav-icon">✈️</span> Flights
+        </button>
+        <button class="nav-btn" id="btn-transport" aria-label="Compare transport options">
+          <span class="nav-icon">🚆</span> Transport
+        </button>
+      </nav>
+
+      <div class="header-status">
+        <span class="status-indicator">
+          <span class="status-dot green"></span>
+          <span class="status-text">Rasa AI Active</span>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─── HERO RIBBON ─────────────────────────────────────────────── -->
+  <section class="hero-ribbon" aria-label="Platform Highlights">
+    <div class="ribbon-inner">
+      <div class="ribbon-item">
+        <span class="ribbon-icon">🌱</span>
+        <div class="ribbon-text">
+          <strong>100% Eco-Focused</strong>
+          <span>Green Transport & Lodging</span>
+        </div>
+      </div>
+      <div class="ribbon-divider"></div>
+      <div class="ribbon-item">
+        <span class="ribbon-icon">📊</span>
+        <div class="ribbon-text">
+          <strong>Carbon Metrics</strong>
+          <span>Climatiq Engine Estimates</span>
+        </div>
+      </div>
+      <div class="ribbon-divider"></div>
+      <div class="ribbon-item">
+        <span class="ribbon-icon">✈️</span>
+        <div class="ribbon-text">
+          <strong>Amadeus Flights</strong>
+          <span>Live Sustainable Search</span>
+        </div>
+      </div>
+      <div class="ribbon-divider"></div>
+      <div class="ribbon-item">
+        <span class="ribbon-icon">🤖</span>
+        <div class="ribbon-text">
+          <strong>Rasa NLU Core</strong>
+          <span>Conversational Trip Planner</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MAIN CONTENT ───────────────────────────────────────────── -->
+  <main class="main-layout" role="main">
+
+    <!-- Left Column: Info & Control Dock -->
+    <aside class="info-panel" aria-label="Quick Control Dock">
+
+      <!-- Location Hub Card -->
+      <section class="info-card location-card" aria-labelledby="location-card-title">
+        <div class="card-header">
+          <div class="card-title-group">
+            <span class="card-icon">📍</span>
+            <h2 id="location-card-title" class="card-title">Traveler Origin</h2>
+          </div>
+          <span class="card-chip">Hub</span>
+        </div>
+        <p class="card-body" id="location-display">Location not set.</p>
+        <div class="location-actions">
+          <button class="btn-primary" id="btn-use-location" aria-label="Use my current GPS location">
+            <span class="btn-icon">📡</span> Use My Location
+          </button>
+          <button class="btn-secondary" id="btn-manual-location" aria-label="Enter location manually">
+            <span class="btn-icon">✏️</span> Enter Manually
+          </button>
+        </div>
+        <div class="manual-location-form hidden" id="manual-location-form" role="region" aria-label="Manual location entry">
+          <label for="manual-location-input" class="sr-only">Enter your location</label>
+          <input
+            type="text"
+            id="manual-location-input"
+            class="location-input"
+            placeholder="e.g. London, UK"
+            aria-label="Enter location manually"
+          />
+          <button class="btn-primary" id="btn-set-manual-location">Set Location</button>
+        </div>
+        <p class="privacy-note" id="location-privacy-note">
+          🔒 Location is used solely to contextualize your route queries and is not stored.
+        </p>
+      </section>
+
+      <!-- Carbon Threshold Legend -->
+      <section class="info-card legend-card" aria-labelledby="legend-title">
+        <div class="card-header">
+          <div class="card-title-group">
+            <span class="card-icon">🎨</span>
+            <h2 id="legend-title" class="card-title">Emissions Rating</h2>
+          </div>
+          <span class="card-chip">CO₂e</span>
+        </div>
+        <ul class="legend-list" role="list">
+          <li class="legend-item">
+            <span class="legend-dot green" aria-hidden="true"></span>
+            <div class="legend-text">
+              <strong>Low Impact</strong>
+              <span>&lt; 50 kg CO₂e / passenger</span>
+            </div>
+          </li>
+          <li class="legend-item">
+            <span class="legend-dot amber" aria-hidden="true"></span>
+            <div class="legend-text">
+              <strong>Moderate Impact</strong>
+              <span>50 – 150 kg CO₂e / passenger</span>
+            </div>
+          </li>
+          <li class="legend-item">
+            <span class="legend-dot red" aria-hidden="true"></span>
+            <div class="legend-text">
+              <strong>Higher Impact</strong>
+              <span>&gt; 150 kg CO₂e / passenger</span>
+            </div>
+          </li>
+        </ul>
+        <p class="legend-note">
+          Estimates represent standard single-passenger travel segments based on Climatiq metrics.
+        </p>
+      </section>
+
+      <!-- Advisor Handover Card -->
+      <section class="info-card handover-card hidden" id="handover-status-card" aria-labelledby="handover-title" aria-live="polite">
+        <div class="card-header">
+          <div class="card-title-group">
+            <span class="card-icon">👤</span>
+            <h2 id="handover-title" class="card-title">Human Advisor</h2>
+          </div>
+          <span class="card-chip pulse">Active</span>
+        </div>
+        <p id="handover-status-text" class="card-body">Human advisor requested. Your conversation history has been attached for review.</p>
+      </section>
+
+    </aside>
+
+    <!-- Right Column: Interactive Chat Hub -->
+    <section class="chat-panel" aria-labelledby="chat-panel-title">
+      <!-- Chat Header Bar -->
+      <div class="chat-header-bar">
+        <div class="chat-header-info">
+          <div class="bot-avatar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="bot-icon-svg">
+              <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="#E8F4EC"/>
+              <path d="M8.5 13.5C8.5 13.5 10 15 12 15C14 15 15.5 13.5 15.5 13.5" stroke="#2E9E5E" stroke-width="1.8" stroke-linecap="round"/>
+              <circle cx="9" cy="9.5" r="1.2" fill="#1B5E36"/>
+              <circle cx="15" cy="9.5" r="1.2" fill="#1B5E36"/>
+              <path d="M12 4V6M4 12H6M18 12H20" stroke="#38B46B" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <h2 id="chat-panel-title" class="chat-title">EcoTravel Assistant</h2>
+            <span class="chat-subtitle">Powered by Rasa NLU & Sustainable Travel APIs</span>
+          </div>
+        </div>
+        <div class="chat-header-actions">
+          <span class="badge-online">● Online</span>
+        </div>
+      </div>
+
+      <!-- Chat Messages Container -->
+      <div class="chat-messages" id="chat-messages" role="log" aria-live="polite" aria-atomic="false" aria-label="Chat conversation">
+        <!-- Welcome message populated dynamically by JS -->
+      </div>
+
+      <!-- Quick Reply Chips Row -->
+      <div class="quick-replies" id="quick-replies" role="group" aria-label="Quick reply options">
+        <!-- Populated dynamically by JS -->
+      </div>
+
+      <!-- Chat Input Controls -->
+      <div class="chat-input-wrapper">
+        <div class="chat-input-row">
+          <label for="user-input" class="sr-only">Type your message</label>
+          <input
+            type="text"
+            id="user-input"
+            class="chat-input"
+            placeholder="Ask about sustainable trips, carbon footprints, flights, or eco hotels…"
+            autocomplete="off"
+            aria-label="Chat message input"
+            aria-describedby="input-help"
+            maxlength="500"
+          />
+          <button class="send-btn" id="send-btn" aria-label="Send message">
+            <span>Send</span>
+            <svg class="send-icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" fill="currentColor"/>
+            </svg>
+          </button>
+        </div>
+        <div class="input-footer-bar">
+          <span class="input-hint">Tip: Try clicking any quick topic chip or typing "Plan a trip to Paris"</span>
+          <span class="input-security">🔒 Encrypted Session</span>
+        </div>
+      </div>
+      <p id="input-help" class="sr-only">Press Enter or click Send to send your message.</p>
+
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ─────────────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <strong>EcoTravel Advisor</strong> · Sustainable Journey Intelligence
+      </div>
+      <div class="footer-links">
+        <a href="https://rasa.com" target="_blank" rel="noopener noreferrer">Rasa Open Source</a>
+        <span class="footer-sep">•</span>
+        <a href="https://climatiq.io" target="_blank" rel="noopener noreferrer">Climatiq Engine</a>
+        <span class="footer-sep">•</span>
+        <span>Amadeus APIs</span>
+      </div>
+    </div>
+    <p class="footer-disclaimer">
+      Carbon estimates represent comparative analytical indicators per passenger. Always verify direct booking specifics with green operators.
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
